@@ -15,7 +15,7 @@ const About = () => {
           src={assets.about_img}
           alt=""
         />
-        <div className="flex flex-col justify-center gap-6 md:w-2/4 bg-white/90 shadow-lg p-8 border border-gray-100">
+        <div className="flex flex-col justify-center gap-6 w-full md:max-w-[450px] bg-white/90 shadow-lg p-8 border border-gray-100">
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Who We Are</h2>
           <p className="text-gray-600 text-justify leading-relaxed">
             Forever was born out of a passion for innovation and a desire to

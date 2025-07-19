@@ -15,29 +15,29 @@ const Contact = () => {
           src={assets.contact_img}
           alt=""
         />
-        <div className="flex flex-col justify-center items-start gap-6 bg-white/90 shadow-lg border border-gray-100 p-8 md:w-[420px] w-full">
+        <div className="flex flex-col justify-center items-start gap-6 bg-white/90 shadow-lg border border-gray-100 p-8 w-full md:max-w-[480px]">
           <div>
             <p className="font-semibold text-xl text-gray-700 mb-1">
               Our Store
             </p>
             <p className="text-gray-500 leading-relaxed">
-              54709 Willms Station <br /> Suite 350, Washington, USA
+              Vadodara Gujarat <br /> India
             </p>
           </div>
           <div>
             <p className="text-gray-500 leading-relaxed">
               Tel:{" "}
-              <span className="font-medium text-gray-700">(415) 555-0132</span>
+              <span className="font-medium text-gray-700">+911234567890</span>
               <br />
               Email:{" "}
               <span className="font-medium text-gray-700">
-                admin@forever.com
+                nestfurniture@gmail.com
               </span>
             </p>
           </div>
           <div>
             <p className="font-semibold text-xl text-gray-700 mb-1">
-              Careers at Forever
+              Join Our Team
             </p>
             <p className="text-gray-500">
               Learn more about our teams and job openings.
