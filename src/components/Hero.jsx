@@ -2,11 +2,9 @@ import { assets } from "../assets/assets";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col sm:flex-row border border-gray-400">
+    <div className="flex flex-col sm:flex-row border border-gray-400 shadow-lg overflow-hidden my-8">
       {/* Hero Left Side */}
-      <img className="w-full sm:w-1/2" src={assets.hero_img} alt="" />
-      {/* Hero Right Side */}
-      <div className="w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0">
+      <div className="w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0 bg-white">
         <div className="text-[#232323] w-full max-w-lg px-4">
           {/* Badge */}
           <div className="flex items-center gap-3 mb-2">
@@ -35,6 +33,12 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      {/* Hero Left Side */}
+      <img
+        className="w-full sm:w-1/2 object-cover"
+        src={assets.hero_img}
+        alt=""
+      />
     </div>
   );
 };
