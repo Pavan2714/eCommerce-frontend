@@ -45,7 +45,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className=" text-xl py-4">
+      <div className=" text-center py-4">
         <Title text1={"WHY"} text2={"CHOOSE US"} />
       </div>
 
