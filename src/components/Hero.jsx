@@ -4,23 +4,37 @@ const Hero = () => {
   return (
     <div className="flex flex-col sm:flex-row border border-gray-400">
       {/* Hero Left Side */}
+      <img className="w-full sm:w-1/2" src={assets.hero_img} alt="" />
+      {/* Hero Right Side */}
       <div className="w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0">
-        <div className="text-[#414141]">
-          <div className="flex items-center gap-2">
-            <p className="w-8 md:w-11 h-[2px] bg-[#414141]"></p>
-            <p className=" font-medium text-sm md:text-base">OUR BESTSELLERS</p>
+        <div className="text-[#232323] w-full max-w-lg px-4">
+          {/* Badge */}
+          <div className="flex items-center gap-3 mb-2">
+            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold tracking-wider shadow">
+              FEATURED
+            </span>
+            <span className="text-xs text-gray-400 tracking-widest">
+              | OUR BESTSELLERS
+            </span>
           </div>
-          <h1 className="prata-regular text-3xl sm:py-3 lg:text-5xl leading-relaxed">
+          {/* Black & White Gradient Headline */}
+          <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-black via-gray-500 to-white bg-clip-text text-transparent mb-4 drop-shadow">
             Latest Additions
           </h1>
-          <div className="flex items-center gap-2">
-            <p className="font-semibold text-sm md:text-base">SHOP NOW</p>
-            <p className="w-8 md:w-11 h-[1px] bg-[#414141]"></p>
-          </div>
+          {/* Description */}
+          <p className="text-base sm:text-lg text-gray-600 mb-6">
+            Discover our newest arrivals, handpicked for quality and style. Shop
+            the latest trends and exclusive collections now!
+          </p>
+          {/* Call to Action */}
+          <a
+            href="#shop"
+            className="inline-block bg-gradient-to-r from-black to-gray-500 hover:from-gray-700 hover:to-black text-white font-bold py-2 px-6 rounded-md shadow transition duration-200"
+          >
+            Shop Now
+          </a>
         </div>
       </div>
-      {/* Hero Right Side */}
-      <img className="w-full sm:w-1/2" src={assets.hero_img} alt="" />
     </div>
   );
 };
